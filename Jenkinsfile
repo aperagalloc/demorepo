@@ -33,5 +33,8 @@ node {
 	  		withEnv(['env1=ambiente1']) {
 	  			sh "echo $env1"
 	  		}
+	  		if isUnix() {
+	  			echo "unix"
+	  		}
 	  }
 }
