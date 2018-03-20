@@ -15,7 +15,7 @@ node {
 
 
 	  		if (env.OTHERATTR.contains("OTHER_ATTRIBUTE")) {
-	  			sh "echo env.OTHERATTR"
+	  			sh "echo $env.OTHERATTR"
 	  		}
 	  }
 	  
