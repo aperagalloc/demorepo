@@ -20,4 +20,5 @@ pipeline {
 	  stage("Next Stage - 4") {
 	  	sh "echo Hello World! 4"
 	  }
+	}
 }
