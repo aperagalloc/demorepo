@@ -20,7 +20,10 @@ node {
 	  }
 	  
 	  stage("Next Stage - 3") {
+	  	ansiColor("xterm") {
 	  		sh "echo Hello World! 3"
+	  		echo "asdasdadads"
+	  	}
 	  }
 
 	  stage("Next Stage - 4") {
