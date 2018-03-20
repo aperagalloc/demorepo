@@ -22,8 +22,9 @@ node {
 	  stage("Next Stage - 3") {
 	  	ansiColor("xterm") {
 	  		sh "echo Hello World! 3"
-	  		echo "asdasdadads"
+	  		echo "http://www.something.com"
 	  	}
+	  	echo "http://www.something.com"
 	  }
 
 	  stage("Next Stage - 4") {
