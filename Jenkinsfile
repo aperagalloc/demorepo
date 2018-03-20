@@ -1,13 +1,12 @@
 #!/usr/bin/env groovy
 
-pipeline {
-	agent none
+node {
 	stages {
 		stage("\u27A1 Build Stage/UT") {
 			steps {
-				ansiColor("xterm") {
+
 		    	sh "echo Hello World!"
-	  		}
+
 	  	}
 		}
 
