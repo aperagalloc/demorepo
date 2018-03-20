@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
 node {
+	deleteDir()
 		stage("\u27A1 Build Stage") {
 			env.SOMEATTR = "SOME_ATTRIBUTE"
 			env.OTHERATTR = "OTHER_ATTRIBUTE"
