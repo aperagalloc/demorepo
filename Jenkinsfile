@@ -1,8 +1,11 @@
 #!/usr/bin/env groovy
 
 node {
-		stage("\u27A1 Build Stage/UT") {
+		stage("\u27A1 Build Stage") {
+			env.SOMEATTR = "SOME_ATTRIBUTE"
+			env.OTHERATTR = "OTHER_ATTRIBUTE"
 		    	sh "echo Hello World!"
+		    	sh "echo ${env.SOMEATTR}
 		}
 
 	  stage("Next Stage - 2") {
