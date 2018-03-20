@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 
 pipeline {
-	agent {
+	agent none
+	stages {
 		node {
 			deleteDir()
 			env.SOMEATTR = "SOME_ATTRIBUTE"
