@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 
 node {
-	stages {
 		stage("\u27A1 Build Stage/UT") {
 			steps {
 
@@ -27,5 +26,4 @@ node {
 	  		sh "echo Hello World! 4"
 	  	}
 	  }
-	}
 }
