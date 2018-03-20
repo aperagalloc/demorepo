@@ -12,7 +12,9 @@ node {
 	  		if (env.SOMEATTR.contains("SOME_ATTRIBUTE")) {
 	  			sh "echo SOME_ATTRIBUTE"
 	  		}
-	  		else {
+
+
+	  		if (env.OTHERATTR.contains("OTHER_ATTRIBUTE")) { {
 	  			sh "echo env.OTHERATTR"
 	  		}
 	  }
