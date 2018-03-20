@@ -5,9 +5,9 @@ pipeline {
 	stages {
 		stage("\u27A1 Build Stage/UT") {
 			steps {
-				ansiMessage("Build Stage Start/UT")
-		    sh "echo Hello World!"
-	    	ansiMessage("\u2713 Build Stage Done/UT")
+				ansiColor("xterm") {
+		    	sh "echo Hello World!"
+	  		}
 	  	}
 		}
 
@@ -19,13 +19,13 @@ pipeline {
 	  
 	  stage("Next Stage - 3") {
 	  	steps {
-	  		sh "echo Hello World! 2"
+	  		sh "echo Hello World! 3"
 	  	}
 	  }
 
 	  stage("Next Stage - 4") {
 	  	steps {
-	  		sh "echo Hello World! 2"
+	  		sh "echo Hello World! 4"
 	  	}
 	  }
 	}
