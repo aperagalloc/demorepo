@@ -3,13 +3,7 @@
 pipeline {
 	agent none
 	stages {
-		node {
-			deleteDir()
-			env.SOMEATTR = "SOME_ATTRIBUTE"
-			env.OTHERATTR = "OTHER_ATTRIBUTE"
-
-			someBuildStages()
-		}
+		someBuildStages()
 	}
 }
 
