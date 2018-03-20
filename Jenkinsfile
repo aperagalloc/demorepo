@@ -1,12 +1,14 @@
 #!/usr/bin/env groovy
 
 pipeline {
-	node() {
-		deleteDir()
-		env.SOMEATTR = "SOME_ATTRIBUTE"
-		env.OTHERATTR = "OTHER_ATTRIBUTE"
+	agent {
+		node() {
+			deleteDir()
+			env.SOMEATTR = "SOME_ATTRIBUTE"
+			env.OTHERATTR = "OTHER_ATTRIBUTE"
 
-		someBuildStages()
+			someBuildStages()
+		}
 	}
 }
 
