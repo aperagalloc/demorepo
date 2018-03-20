@@ -47,7 +47,7 @@ node {
 
 		if (env.BRANCH_NAME == 'otherbranch') {
 		  stage("OTHERBRANCH stage") {
-		  		sh 'echo "otro branch $env.BRANCH_NAME"'
+		  		sh "echo 'otro branch $env.BRANCH_NAME'"
 		  }
 		 
 		}
