@@ -36,7 +36,7 @@ node {
 
 	  stage("Next Stage - 5") {
 	  		sh "echo Hello World! 5"
-	  		if isUnix() {
+	  		if (isUnix()) {
 	  			sh "echo unix"
 	  		}
 	  }
