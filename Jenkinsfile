@@ -5,11 +5,16 @@ node {
 			env.SOMEATTR = "SOME_ATTRIBUTE"
 			env.OTHERATTR = "OTHER_ATTRIBUTE"
 		    	sh "echo Hello World!"
-		    	sh "echo ${env.SOMEATTR}
 		}
 
 	  stage("Next Stage - 2") {
 	  		sh "echo Hello World! 2"
+	  		if (env.SOMEATTR.contains("SOME_ATTRIBUTE")) {
+	  			sh "echo SOME_ATTRIBUTE"
+	  		}
+	  		else {
+	  			sh "echo env.OTHERATTR"
+	  		}
 	  }
 	  
 	  stage("Next Stage - 3") {
