@@ -37,7 +37,7 @@ node {
 				  stage("Next Stage - 4") {
 			  		sh "echo Hello World! 4"
 			  		withEnv(['env1=ambiente1']) {
-			  			sh sleep 3000
+			  			sh sleep 30000
 			  			sh "echo $env1"
 			  		}
 				  }
