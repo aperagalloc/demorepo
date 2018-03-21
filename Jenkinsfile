@@ -49,7 +49,7 @@ node {
 		if (env.BRANCH_NAME == 'otherbranch') {
 		  someBuildStage("'otro branch $env.BRANCH_NAME'")
 		}
-
+}
 
 
 def someBuildStage(message) {
