@@ -31,7 +31,7 @@ node {
 			  		echo "http://www.something.com"
 			  	}
 			  	echo "http://www.something.com"
-			  }, 
+			  } , 
 			  "stage 4 running in parallel": {
 				  stage("Next Stage - 4") {
 			  		sh "echo Hello World! 4"
