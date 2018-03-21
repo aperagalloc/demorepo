@@ -3,7 +3,8 @@
 env.SOMEATTR = "SOME_ATTRIBUTE"
 env.OTHERATTR = "OTHER_ATTRIBUTE"
 
-node {
+node { 
+		deleteDir()
 		if (env.BRANCH_NAME == 'master') {
 
 			stage("\u27A1 Build Stage") {
@@ -46,9 +47,13 @@ node {
 		}
 
 		if (env.BRANCH_NAME == 'otherbranch') {
-		  stage("OTHERBRANCH stage") {
-		  		sh "echo 'otro branch $env.BRANCH_NAME'"
-		  }
-		 
+		  someBuildStage("'otro branch $env.BRANCH_NAME'")
 		}
+
+
+
+def someBuildStage(message) {
+	stage("OTHERBRANCH stage 1") {
+		sh "echo $MEESAGE"
+	}
 }
