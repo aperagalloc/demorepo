@@ -54,6 +54,6 @@ node {
 
 def someBuildStage(message) {
 	stage("OTHERBRANCH stage 1") {
-		sh "echo $MEESAGE"
+		sh message
 	}
 }
