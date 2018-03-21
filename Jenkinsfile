@@ -24,7 +24,7 @@ node {
 		  }
 		  
 		  parallel (
-		  	'stage 3 running in parallel' {
+		  	"stage 3 running in parallel" {
 			  	stage("Next Stage - 3") {
 			  	ansiColor("xterm") {
 			  		sh "echo Hello World! 3"
@@ -32,7 +32,7 @@ node {
 			  	}
 			  	echo "http://www.something.com"
 			  }, 
-			  'stage 4 running in parallel': {
+			  "stage 4 running in parallel": {
 				  stage("Next Stage - 4") {
 			  		sh "echo Hello World! 4"
 			  		withEnv(['env1=ambiente1']) {
